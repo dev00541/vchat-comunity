@@ -1,0 +1,69 @@
+# Thư mục vendor (chứa các package của Composer)
+vendor/
+
+# Các file và thư mục cache của Laravel
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/testing/*
+/storage/framework/views/*
+!/storage/.gitignore
+/storage/logs/*
+!/storage/logs/.gitignore
+
+# Thư mục .env chứa các thông tin môi trường (không đưa lên Git)
+.env
+.env.*.backup
+
+# Thư mục node_modules (chứa các package của npm/yarn)
+node_modules/
+
+# Các file log
+npm-debug.log
+yarn-debug.log*
+yarn-error.log*
+
+# IDE/Editor config files
+.idea/
+*.sublime-workspace
+*.sublime-project
+.vscode/
+
+# Composer files
+composer.phar
+
+# Các file tạm
+*.phpunit.result.cache
+.phpunit.result.cache
+.php_cs.cache
+
+# Các file tự động tạo bởi hệ thống
+.DS_Store
+Thumbs.db
+
+# Các file build
+/public/hot
+/public/storage
+/public/mix-manifest.json
+
+# Các file tự động khi sử dụng Laravel Mix hoặc Vite
+/public/js/*
+!/public/js/.gitignore
+/public/css/*
+!/public/css/.gitignore
+
+# Kết quả từ PHPUnit
+/tests/*.actual
+/tests/*.expected
+
+# Nếu sử dụng Homestead hoặc Docker
+Homestead.json
+Homestead.yaml
+after.sh
+.env.dusk.local
+docker-compose.override.yml
+
+# Các file build khi sử dụng deploy hoặc CI/CD
+.phpstorm.meta.php
+/build/
+.cache/
