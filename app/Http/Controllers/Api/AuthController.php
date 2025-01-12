@@ -57,10 +57,11 @@ class AuthController extends Controller
     }
 
     /**
-     * Refresh a token.
+     * Create new token adn delete old token.
      *
      * @return \Illuminate\Http\JsonResponse
      */
+
     public function refresh()
     {
         return $this->respondWithToken(auth()->refresh());
@@ -73,6 +74,7 @@ class AuthController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
+
     protected function respondWithToken($token)
     {
         return response()->json([

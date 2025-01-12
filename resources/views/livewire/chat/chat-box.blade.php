@@ -50,11 +50,11 @@ class="w-full overflow-hidden">
 
 
             <div class="shrink-0">
-                <x-avatar class="h-9 w-9 lg:w-11 lg:h-11" />
+                <x-avatar src="{{ md5(strtolower(trim($selectedConversation->getReceiver()->email))) }}" class="h-9 w-9 lg:w-11 lg:h-11" />
             </div>
 
 
-            <h6 class="font-bold truncate"> {{$selectedConversation->getReceiver()->email}} </h6>
+            <h6 class="font-bold truncate"> {{$selectedConversation->getReceiver()->name}} </h6>
 
 
         </div>
